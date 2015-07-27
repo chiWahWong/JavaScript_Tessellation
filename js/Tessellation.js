@@ -30,7 +30,7 @@ function Tessellation(parameters){
             +'_cells_needed_rows : '   + _cells_needed_rows    +'\n'
             +'_cells_needed_skip : '   + _cells_needed_skip    +'\n'
             +'_cells_skip_interval : ' + _cells_skip_interval  +'\n'
-            +'_cells_map : '           + _cells_map);
+            +'_cells_map : '           , _cells_map);
     }
     function _cells_calculate(){
         _tiles_container_width = tiles_container.width();
