@@ -1,52 +1,53 @@
 @charset "utf-8";
 /* CSS Document */
-html, body{
+
+html, body {
     padding: 0;
     margin: 0;
 }
-.clear{
+.clear {
     clear: both;
     height: 0;
 }
 
-.tessellation > ul{
+.tessellation > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-.tiles-container{
+.tiles-container {
     position: relative;
     background: url(../image/style/black-stripe.gif);
 }
-.tiles-container .tile{
+.tiles-container .tile {
     position: absolute;
     overflow: hidden;
 }
-.tiles-container .tile.spin{
+.tiles-container .tile.spin {
     -webkit-animation: spin 1s cubic-bezier(0,0,0.25,1);
     animation: spin 1s cubic-bezier(0,0,0.25,1);
 }
-.tiles-container .tile.raw{
+.tiles-container .tile.raw {
     margin-top: -999999px;
 }
-.tiles-container .tile.big{
+.tiles-container .tile.big {
     
 }
-.person{
+.person {
     position: relative;
 }
 .hosts .person,
-.guests .person{
+.guests .person {
     cursor: pointer;
 }
-.person img{
+.person img {
     opacity: inherit;
     filter: inherit;
     position: absolute;
     left: 0;
     top: 0;
 }
-.person .info{
+.person .info {
     display: none;
     position: absolute;
     left: 0;
@@ -57,29 +58,29 @@ html, body{
     background: url(../image/style/glassBgBody000alpha30.png);
     box-shadow: 0 0 180px #000;
 }
-.person:hover .info{
+.person:hover .info {
     display: block;
 }
-.person .info *{
+.person .info * {
     padding: 1px 5px;
 }
-.person .info .name{
+.person .info .name {
     font-size: 18px;
     color: #fff;
 }
-.person .info .title{
+.person .info .title {
     font-size: 9px;
     color: #ddd;
 }
-.person .info .age{
+.person .info .age {
     font-size: 10px;
     color: #eee;
 }
-.person .info .subjects{
+.person .info .subjects {
     font-size: 10px;
     color: #eee;
 }
-.person .info .description{
+.person .info .description {
     font-size: 10px;
     color: #eee;
 }
