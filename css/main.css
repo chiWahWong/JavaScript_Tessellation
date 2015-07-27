@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+    padding: 0;
+    margin: 0;
+}
+.clear{
+    clear: both;
+    height: 0;
+}
+
+.tessellation > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.tiles-container{
+    position: relative;
+    background: url(../image/style/black-stripe.gif);
+}
+.tiles-container .tile{
+    position: absolute;
+    overflow: hidden;
+}
+.tiles-container .tile.spin{
+    -webkit-animation: spin 1s cubic-bezier(0,0,0.25,1);
+    animation: spin 1s cubic-bezier(0,0,0.25,1);
+}
+.tiles-container .tile.raw{
+    margin-top: -999999px;
+}
+.tiles-container .tile.big{
+    
+}
+.person{
+    position: relative;
+}
+.hosts .person,
+.guests .person{
+    cursor: pointer;
+}
+.person img{
+    opacity: inherit;
+    filter: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.person .info{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 7px 0 10px;
+    text-align: center;
+    background: url(../image/style/glassBgBody000alpha30.png);
+    box-shadow: 0 0 180px #000;
+}
+.person:hover .info{
+    display: block;
+}
+.person .info *{
+    padding: 1px 5px;
+}
+.person .info .name{
+    font-size: 18px;
+    color: #fff;
+}
+.person .info .title{
+    font-size: 9px;
+    color: #ddd;
+}
+.person .info .age{
+    font-size: 10px;
+    color: #eee;
+}
+.person .info .subjects{
+    font-size: 10px;
+    color: #eee;
+}
+.person .info .description{
+    font-size: 10px;
+    color: #eee;
+}
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotateY(0deg);}
+    100% {-webkit-transform: rotateY(720deg);}
+}
+@keyframes spin {
+    0%   {transform: rotateY(0deg);}
+    100% {transform: rotateY(720deg);}
+}
