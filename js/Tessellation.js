@@ -1,18 +1,18 @@
 // JavaScript Document
 
 function Tessellation(parameters){
-    var tiles_container        = parameters.tessellation.addClass('tiles-container');
-    var tiles                  = tiles_container.find('.tile');
-    var _CELL_MIN_WIDTH        = 200;
-    var _CELLS_COLUMNS_MAX     = 6;
-    var _cells_needed_columns  = 0;
-    var _cells_needed_cells    = 0;
-    var _cells_needed_rows     = 0;
-    var _cells_needed_skip     = 0;
-    var _cells_skip_interval   = 0;
-    var _cell_width            = 0;
-    var _cells_map             = [];
-    var _cells_occupied        = 0;
+    var tiles_container       = parameters.tessellation.addClass('tiles-container');
+    var tiles                 = tiles_container.find('.tile');
+    var _CELL_MIN_WIDTH       = 200;
+    var _CELLS_COLUMNS_MAX    = 6;
+    var _cells_needed_columns = 0;
+    var _cells_needed_cells   = 0;
+    var _cells_needed_rows    = 0;
+    var _cells_needed_skip    = 0;
+    var _cells_skip_interval  = 0;
+    var _cell_width           = 0;
+    var _cells_map            = [];
+    var _cells_occupied       = 0;
     var _TILES_BIG_INTERVAL_RANDOM_RANGE = 6;
     var _TILES_BIG_INTERVAL_BASE         = 0;
     var _tiles_container_width           = 0;
@@ -24,13 +24,13 @@ function Tessellation(parameters){
     });
     
     function _debug(){
-        console.log('\ndebug');
-        console.log('_cells_needed_cells : '+_cells_needed_cells);
-        console.log('_cells_needed_columns : '+_cells_needed_columns);
-        console.log('_cells_needed_rows : '+_cells_needed_rows);
-        console.log('_cells_needed_skip : '+_cells_needed_skip);
-        console.log('_cells_skip_interval : '+_cells_skip_interval);
-        console.log('_cells_map : ', _cells_map);
+        console.log('\ndebug'+'\n'
+            +'_cells_needed_cells : '  + _cells_needed_cells   +'\n'
+            +'_cells_needed_columns : '+ _cells_needed_columns +'\n'
+            +'_cells_needed_rows : '   + _cells_needed_rows    +'\n'
+            +'_cells_needed_skip : '   + _cells_needed_skip    +'\n'
+            +'_cells_skip_interval : ' + _cells_skip_interval  +'\n'
+            +'_cells_map : '           + _cells_map);
     }
     function _cells_calculate(){
         _tiles_container_width = tiles_container.width();
