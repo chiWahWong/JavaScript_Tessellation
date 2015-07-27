@@ -5,6 +5,4 @@ credits:
 
 features:
     responsive (cross-browser, IE7 workable)
-    img fit parent (cross-browser, IE7 workable)
     random tile size
-    basic CSS3 effect
